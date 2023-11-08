@@ -1,0 +1,38 @@
+body
+{
+   background-color: #FFFFFF;
+   background-image: url('../images/updatequestion_bkgrnd.png');
+   background-repeat: repeat-x;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+input:focus, textarea:focus, select:focus
+{
+   outline: none;
+}
+#Close{background: rgb(200,0,0); color: white; font-size: 16px; border: 1px solid black; padding: 3px 10px 6px 10px; text-decoration: none; margin-left: 5px;}
+#Confirm{background: rgb(0,0,200); color: white;}
+textarea, input, select {margin-bottom: 10px; font-size: 15px;}

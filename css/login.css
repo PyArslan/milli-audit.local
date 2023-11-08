@@ -1,0 +1,49 @@
+body
+{
+   background-color: #F5F5F5;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+input:focus, textarea:focus, select:focus
+{
+   outline: none;
+}
+#Login_Form{background: rgb(245,245,245); border: 1px solid black; border-radius: 5px; padding: 10px 15px 10px 10px; margin: auto; width: 35%; margin-top: 10%}
+#Login_Form h1{color: rgb(0,0,200); font-family: Georgia; font-size: 35px;}
+		
+.col input{font-size: 16px; padding: 5px 0px 5px 5px;}
+.col input{width: 99%;}
+.div-span{padding-bottom: 10px;}
+.div-input{padding-bottom: 20px; display:inline-block; width:100%; z-index:84;}
+.close-layer{color: rgb(0,0,200); background: transparent; font-size: 30px; border: none}
+#Confirm{width: 20%; background: rgb(0,0,200); color: white; padding-right: 5px;}
+#Close{width: 20%; background: rgb(200,0,0); color: white; font-size: 16px; border: 2px solid black; padding: 5px 10px 6px 10px; text-decoration: none;}
+@media screen and (max-width: 1000px){
+   #Login_Form{width: 100%; border: 0px; text-align: center;}
+   .col input{width: 70%; font-size: 50px;}
+   #Login_Form h1{font-size: 65px;}
+   #Confirm,#Close{font-size: 30px; margin: 15px;}
+}
