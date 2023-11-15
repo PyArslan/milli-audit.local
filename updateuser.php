@@ -5,7 +5,7 @@ if ($_SESSION['Status'] != 'Администратор'){header('Location: /onli
 date_default_timezone_set("Asia/Ashgabat");
 $conn = connect_to_db();
 $id = $_GET['id'];
-$sql = "SELECT * FROM klienty WHERE ID='$id'";
+$sql = "SELECT * FROM `Table` WHERE ID='$id'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($result);
 $Fio = $row['Fio']; $Phone = $row['Phone']; $Activity = $row['Activity']; $Email = $row['Email']; $Login = $row['Login']; $Password = $row['Password']; $Status = $row['Status']; $End_date = $row['End_date'];  
@@ -59,8 +59,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $Status = mysqli_real_escape_string($conn, $Status);
         if ($Password){
             $Password = md5($Password);
-            $sql = "UPDATE `klienty` SET Fio = '$Fio', Phone = '$Phone', Activity = '$Activity', Email = '$Email', Status = '$Status', Login = '$Login', Password = '$Password', End_date = '$End_date' WHERE ID='$id'";
-        } else {$sql = "UPDATE ".$mysql_table." SET Fio = '$Fio', Phone = '$Phone', Activity = '$Activity', Email = '$Email', Status = '$Status', Login = '$Login', End_date = '$End_date' WHERE ID='$id'";}
+            $sql = "UPDATE `Table` SET Fio = '$Fio', Phone = '$Phone', Activity = '$Activity', Email = '$Email', Status = '$Status', Login = '$Login', Password = '$Password', End_date = '$End_date' WHERE ID='$id'";
+        } else {$sql = "UPDATE `Table` SET Fio = '$Fio', Phone = '$Phone', Activity = '$Activity', Email = '$Email', Status = '$Status', Login = '$Login', End_date = '$End_date' WHERE ID='$id'";}
 
         $result = mysqli_query($conn, $sql);
         mysqli_close($conn);
