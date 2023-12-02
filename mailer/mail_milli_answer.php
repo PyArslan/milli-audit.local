@@ -115,8 +115,8 @@ if(fread($check, filesize("check.txt")) == "OFF"){
 	            $mail = new PHPMailer();
 	            $mail->IsSMTP();
 	            $mail->CharSet = "utf-8";
-	            $mail->Host = 'smtp.gmail.com';
-	            $mail->Port = 587;
+	            $mail->Host = 'SERVER';
+	            $mail->Port = 'PORT';
 	            $mail->SMTPAuth = true;
 	            $mail->Username = 'MAIL';
 	            $mail->Password = 'PASSWORD';
